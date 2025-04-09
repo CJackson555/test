@@ -20,7 +20,7 @@ app.get('/api/token', (req, res) => {
   const payload = {
     iss: client_id,
     scope: 'rest_webservices',
-    aud: `https://${account_id}.suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token`,
+    aud: `https://${account_id}.suitetalk.api.netsuite.com/services/rest/oauth2/v1/token`,
     iat: now,
     exp: now + 300
   };
